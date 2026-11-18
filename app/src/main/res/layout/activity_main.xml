@@ -25,10 +25,10 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnKiemTra"
+        android:id="@+id/btnGhiNhan"
         android:layout_marginTop="15dp"
         android:textSize="25sp"
-        android:text="Kiem tra"/>
+        android:text="Ghi nhan"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
