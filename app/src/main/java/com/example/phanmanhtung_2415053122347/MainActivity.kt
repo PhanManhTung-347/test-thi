@@ -12,11 +12,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var luotCuoi_2347: LuotNhan?= null
     private var soThuTu_2347=0
+    private var phieuNhan_2347 = PhieuNhan()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.txtTong.text = "Tong: ${phieuNhan_2347.daNhan_2347}"
+        binding.txtConLai.text = "Con lai: ${9- phieuNhan_2347.daNhan_2347}"
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
